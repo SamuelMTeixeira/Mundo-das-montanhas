@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Nunito:ital,wght@0,300;1,700&family=Varela+Round&display=swap');
+
+
+.postagem {
+    padding: 3em;
+}
+.postagem p {
+    margin-top: 0.3em;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 1em;
+}
+.postagem h3  {
+    font-size: 2em;
+    border: none;
+    padding: 0; 
+}
+.postagem h6  {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: #414141;
+    font-weight: normal;
+    font-size: 1.2em;
+    padding: 0;
+}
+.postagem h4 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+.postagem p.legenda-imagem {
+    font-size: 0.8em;
+    text-indent: 0;
+    margin-bottom: 2em;
+}
+.postagem img {
+    width: 100%;
+    height: 30em;
+}
+.postagem img.img-lateral  {
+    width: 300px;
+    height: 200px;
+    margin: 0 1em 0 0;
+}
+.postagem iframe {
+    width: 100%;
+    height: 25em;
+    margin-bottom: 1em;
+}
+.postagem hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* CONFIGURAÇÃO DAS TABELAS*/
+.postagem table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    border-collapse: collapse;
+}
+.postagem table th, .postagem table td {
+    padding: 7px;
+    text-align: left;
+    font-size: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.postagem table th#dia{
+    width: 300px;
+}
+.postagem table th#qtd{
+    width: 1000px;
+}
+.tr-impar {
+    background: #ebebeb;
+}
+.postagem table tr:hover {
+    background-color: #73cdeb;
+}
+.postagem table th{
+    background: #0c70f3;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+}
+ 
+.sub-titulo-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 3px solid #00688B;
+    margin-bottom: 2em;
+}
+
+.icones-rede-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icones-rede-social img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+/*----------------------------------------------------------*/
+
+/* ADPTAÇÃO DA TELA */
+@media (min-width: 0px) {
+    /* AJUSTES NO CABEÇALHO DA POSTAGEM */
+    .postagem h3  {
+        font-size: 1.5em;
+    }
+    .postagem h6  {
+        font-size: 0.7em;
+    }
+    .postagem h4 {
+        font-size: 1em;
+    }
+    .postagem table th#dia {
+        width: 375px;
+    }
+    .postagem table th#qtd {
+        width: 375px;
+    }
+}
+
+@media (min-width: 750px) {
+    /* AJUSTES NO CABEÇALHO DA POSTAGEM */
+    .postagem h3  {
+        font-size: 1.6em;
+    }
+    .postagem h6  {
+        font-size: 0.8em;
+    }
+    .postagem h4 {
+        font-size: 1.5em;
+    }
+    .postagem table th#dia {
+        width: 375px;
+    }
+    .postagem table th#qtd {
+        width: 375px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    /* AJUSTES NO CABEÇALHO DA POSTAGEM */
+    .postagem h3  {
+        font-size: 2em;
+    }
+    .postagem h6  {
+        font-size: 1.2em;
+    }
+    .postagem h4 {
+        font-size: 1.5em;
+    }
+    .postagem table th#dia {
+        width: 300px;
+    }
+    .postagem table th#qtd {
+        width: 1000px;
+    }
+}

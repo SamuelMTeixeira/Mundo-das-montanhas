@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Nunito:ital,wght@0,300;1,700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    font: 16px Verdana, Geneva, Tahoma, sans-serif;
+    color: #777;
+    height: 100%;
+    min-width: 700px;
+}
+button {
+    display: block;
+    padding: 10px;
+    background: #009ACD;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #00688B;
+    color: white;
+    border: none;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+time {
+    text-decoration: underline #00688B;
+}
+
+/* CSS DAS CLASSES E IDS*/
+.conteudo {
+    color: #777;
+    background: linear-gradient(-45deg, white, #bacbd3, #e0f3ef);
+    height: 100%;
+}
+.conteudo h3 {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+/* FORMATAÇÕES DAS IMAGENS*/
+.imagem-1, .imagem-2, .imagem-3, .imagem-4 {
+    position: relative;
+    height: 100%;
+}
+.imagem-1 {
+    background: url(../imgs/montanhas-ataleia.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.imagem-2 {
+    background: url(../imgs/roncamento.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+/* FORMATAÇÕES DO TÍTULO*/
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    color: #ffffff;  
+    background: rgb(248, 248, 255, 0.2);
+}
+
+.conteudo-titulo p.titulo, .conteudo-titulo p.sub-titulo{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    letter-spacing: 0.01em;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+.conteudo-titulo p.titulo {
+    font-size: 5em;
+}
+.conteudo-titulo p.sub-titulo{
+    font-size: 1.5em;
+    padding-bottom: 2px;
+}
+
+.conteudo-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    color: #fff;  
+    background: rgb(248, 248, 255, 0.8 );
+}
+ .conteudo-box h3.informacoes-titulo, .conteudo-box p.informacoes-conteudo {
+    color: black;  
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    letter-spacing: 2px;
+}
+.conteudo-box h3.informacoes-titulo {
+    text-align: center; 
+    font-size: 3em;
+    margin-top: 2px;
+}
+.conteudo-box p.informacoes-conteudo {
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 10px;
+}
+.conteudo-box button {
+    margin: 0 auto;
+    margin-top: 0.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* RELACIONADO ÀS IMAGENS DO 2 PARALLEX*/
+
+.img-bio {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img-bio img:hover {
+    opacity: 0.7;
+}
+.conjunto-imagens-bio h3 {
+    padding: 1em;
+    font-size: 1.5em;
+}
+.conjunto-imagens-bio p {
+    margin-top: 1em;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.conjunto-imagens-bio .img-bio img {
+    width: 18em;
+    height: 23em;
+    margin-right: 1em;
+    border-radius: 16px;
+    flex-shrink: 1;
+}
+.img-lateral {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.img-lateral:hover {
+    height: 24em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    transition: height 0.5s ;
+}
+#img-central {
+    width: 20em;
+    height: 27em;
+    border-radius: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* FEED*/
+.corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: white;
+}
+article {
+    width: 70%;
+}
+
+article, aside {
+    padding: 24px;
+    color:black;
+}
+article a, article:visited {
+    color:black;
+}
+article h3 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 3px solid #00688B;
+}
+section {
+    display: flex;
+    border: 1px solid #009ACD;
+    border-left: none;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    position: relative;
+}
+section:hover {
+    opacity: 0.9;
+    background-color: #e9e9e9;
+    cursor: pointer;
+}   
+section img {
+    width: 12em;
+    height: 10em;
+    border-radius: 16px 0 0 16px;
+}
+section h4 {
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #00688B;
+}
+section p {
+    margin-top: 0.3em;
+    padding-right: 1.5em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+}
+.escrito-por {
+    color: #009ACD;
+    padding-bottom: 1em;
+}
+.titulo-noticia {
+    display: block;
+    padding-left: 1.5em; 
+}
+#first-post {
+    width: 100%;
+    height: 30em;
+    background: url(../imgs/chuva.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    border: none;
+}
+#first-post .titulo-noticia {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+    margin-right: 24px;
+}
+#first-post .titulo-noticia p, #first-post .titulo-noticia h4 {
+    color: white;
+    text-align: center;
+}
+#first-post .titulo-noticia h4 {
+    font-size: 3em;
+    text-shadow: -3px 2px 0px black;
+}
+#first-post .titulo-noticia p {
+    font-size: 1.2em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    text-shadow: -2px 2px 0px #009ACD;
+}
+#numeracao-pagina {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.btn-numeragem {
+    border-radius: 64px;
+    padding: 10px 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.no-use, .no-use:hover {
+    cursor: auto;
+}
+
+/* MENU LATERAL*/
+aside {
+    background-color: #f5f5f5;
+    width: 30%;
+    box-shadow: 0px 0px 7px black;
+}
+aside h3 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.5em;
+    padding: 0.6em;
+    padding-bottom: 0;
+    text-align: left;
+    margin-bottom: 0;
+    border-bottom: 2px solid #00688B;
+}
+aside li {
+    display: block;
+    padding: 10px; 
+    border-bottom: 1px solid #009ACD;
+}
+aside a {
+    color: black;
+}
+aside li:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+aside input {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #009ACD;
+    padding: 0.2em;
+}
+
+/* RODAPÉ*/
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/*----------------------------------------------------------*/
+
+/* ADPTAÇÃO DA TELA */
+@media (min-width: 0px) {
+    body {
+        min-width: 700px;
+    }
+    .conteudo-titulo p.titulo {
+        font-size: 3em;
+    }
+    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
+    .conjunto-imagens-bio .img-bio img {
+        width: 12em;
+        height: 18em;
+        margin-right: 1em;
+        border-radius: 16px;
+        flex-shrink: 1;
+    }
+    .img-lateral {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .img-lateral:hover {
+        height: 24em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        transition: height 0.5s ;
+    }
+    #img-central {
+        width: 14em;
+        height: 21em;
+        border-radius: 10px;
+    }
+
+    /* RESPONSIVIDADE DA SECTION*/
+    section {
+        height: 15em;
+    }
+    section img {
+        width: 16em;
+        height: 15em;
+    }
+    section h4 {
+        font-size: 0.8em;
+    }
+    section p {
+        font-size: 0.7em;
+    }
+
+    /* RESPONSIVIDADE DA ASIDE*/
+    aside h3 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (min-width: 750px) {
+    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
+    .conjunto-imagens-bio .img-bio img {
+        width: 13em;
+        height: 19em;
+        margin-right: 1em;
+        border-radius: 16px;
+        flex-shrink: 1;
+    }
+    .img-lateral {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .img-lateral:hover {
+        height: 24em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        transition: height 0.5s ;
+    }
+    #img-central {
+        width: 15em;
+        height: 22em;
+        border-radius: 10px;
+    }
+
+    /* RESPONSIVIDADE DA SECTION*/
+    section {
+        height: 14em;
+    }
+    section img {
+        width: 15em;
+        height: 14em;
+    }
+    section h4 {
+        font-size: 1em;
+    }
+    section p {
+        font-size: 0.8em;
+    }
+
+    /* RESPONSIVIDADE DA ASIDE*/
+    aside h3 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .conteudo-titulo p.titulo {
+        font-size: 5em;
+    }
+    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
+    .conjunto-imagens-bio .img-bio img {
+        width: 18em;
+        height: 23em;
+        margin-right: 1em;
+        border-radius: 16px;
+        flex-shrink: 1;
+    }
+    .img-lateral {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .img-lateral:hover {
+        height: 24em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        transition: height 0.5s ;
+    }
+    #img-central {
+        width: 20em;
+        height: 27em;
+        border-radius: 10px;
+    }
+
+    /* RESPONSIVIDADE DA SECTION*/
+    section {
+        height: 10em;
+    }
+    section img {
+        width: 12em;
+        height: 10em;
+    }
+    section h4 {
+        font-size: 1.2em;
+        margin-top: 13.5px;
+    }
+    section p {
+        font-size: 1em;
+    }
+
+    /* RESPONSIVIDADE DA ASIDE*/
+    aside h3 {
+        font-size: 1.5em;
+    }
+}
