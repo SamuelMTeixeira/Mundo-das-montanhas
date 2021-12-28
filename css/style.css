@@ -9,7 +9,6 @@ body, html {
     font: 16px Verdana, Geneva, Tahoma, sans-serif;
     color: #777;
     height: 100%;
-    min-width: 700px;
 }
 button {
     display: block;
@@ -81,7 +80,7 @@ time {
     padding-right: 0.2em;
     padding-left: 0.2em;
 }
-.conteudo-titulo p.titulo {
+.conteudo-titulo a p.titulo {
     font-size: 5em;
 }
 .conteudo-titulo p.sub-titulo{
@@ -244,7 +243,15 @@ section p {
     border-radius: 16px;
     border: none;
 }
-#first-post .titulo-noticia {
+#first-post-2 {
+    width: 100%;
+    height: 30em;
+    background: url(../imgs/montanha-verde.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    border: none;
+}
+#first-post .titulo-noticia, #first-post-2 .titulo-noticia  {
     margin-top: 10em;
     display: flex;
     flex-direction: column;    
@@ -257,15 +264,27 @@ section p {
     color: white;
     text-align: center;
 }
+#first-post-2 .titulo-noticia p, #first-post-2 .titulo-noticia h4 {
+    color: black;
+    text-align: center;
+}
 #first-post .titulo-noticia h4 {
     font-size: 3em;
     text-shadow: -3px 2px 0px black;
+}
+#first-post-2 .titulo-noticia h4 {
+    font-size: 3em;
 }
 #first-post .titulo-noticia p {
     font-size: 1.2em;
     font-family: 'Baloo Bhaijaan 2', cursive;
     color: white;
     text-shadow: -2px 2px 0px #009ACD;
+}
+#first-post-2 .titulo-noticia p {
+    font-size: 1.2em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
 }
 #numeracao-pagina {
     margin-bottom: 0;
@@ -382,99 +401,3 @@ footer {
 
 }
 
-@media (min-width: 750px) {
-    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
-    .conjunto-imagens-bio .img-bio img {
-        width: 13em;
-        height: 19em;
-        margin-right: 1em;
-        border-radius: 16px;
-        flex-shrink: 1;
-    }
-    .img-lateral {
-        margin-bottom: 2em;
-        margin-top: 2em;
-    }
-    .img-lateral:hover {
-        height: 24em;
-        margin-bottom: 1.5em;
-        margin-top: 1.5em;
-        transition: height 0.5s ;
-    }
-    #img-central {
-        width: 15em;
-        height: 22em;
-        border-radius: 10px;
-    }
-
-    /* RESPONSIVIDADE DA SECTION*/
-    section {
-        height: 14em;
-    }
-    section img {
-        width: 15em;
-        height: 14em;
-    }
-    section h4 {
-        font-size: 1em;
-    }
-    section p {
-        font-size: 0.8em;
-    }
-
-    /* RESPONSIVIDADE DA ASIDE*/
-    aside h3 {
-        font-size: 1.5em;
-    }
-
-}
-
-@media (min-width: 1024px) {
-    .conteudo-titulo p.titulo {
-        font-size: 5em;
-    }
-    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
-    .conjunto-imagens-bio .img-bio img {
-        width: 18em;
-        height: 23em;
-        margin-right: 1em;
-        border-radius: 16px;
-        flex-shrink: 1;
-    }
-    .img-lateral {
-        margin-bottom: 2em;
-        margin-top: 2em;
-    }
-    .img-lateral:hover {
-        height: 24em;
-        margin-bottom: 1.5em;
-        margin-top: 1.5em;
-        transition: height 0.5s ;
-    }
-    #img-central {
-        width: 20em;
-        height: 27em;
-        border-radius: 10px;
-    }
-
-    /* RESPONSIVIDADE DA SECTION*/
-    section {
-        height: 10em;
-    }
-    section img {
-        width: 12em;
-        height: 10em;
-    }
-    section h4 {
-        font-size: 1.2em;
-        margin-top: 13.5px;
-    }
-    section p {
-        font-size: 1em;
-    }
-
-    /* RESPONSIVIDADE DA ASIDE*/
-    aside h3 {
-        font-size: 1.5em;
-    }
-}
