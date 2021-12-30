@@ -1,403 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Nunito:ital,wght@0,300;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shanti&family=Spectral+SC&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
+/* FORMATAÇÕES PADRÕES */
 body, html {
-    font: 16px Verdana, Geneva, Tahoma, sans-serif;
-    color: #777;
     height: 100%;
+    background: whitesmoke;
 }
-button {
-    display: block;
-    padding: 10px;
-    background: #009ACD;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background: #00688B;
-    color: white;
-    border: none;
-}
-ul {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-time {
-    text-decoration: underline #00688B;
-}
-
-/* CSS DAS CLASSES E IDS*/
-.conteudo {
-    color: #777;
-    background: linear-gradient(-45deg, white, #bacbd3, #e0f3ef);
-    height: 100%;
-}
-.conteudo h3 {
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-}
-/* FORMATAÇÕES DAS IMAGENS*/
-.imagem-1, .imagem-2, .imagem-3, .imagem-4 {
-    position: relative;
-    height: 100%;
-}
-.imagem-1 {
-    background: url(../imgs/montanhas-ataleia.jpg) no-repeat center fixed;
-    background-size: cover;
-}
-.imagem-2 {
-    background: url(../imgs/roncamento.jpg) no-repeat center fixed;
-    background-size: cover;
-}
-
-/* FORMATAÇÕES DO TÍTULO*/
-.conteudo-titulo {
-    position: absolute;
-    left: 0;
-    top: 60%;
-    width: 100%;
-    color: #ffffff;  
-    background: rgb(248, 248, 255, 0.2);
-}
-
-.conteudo-titulo p.titulo, .conteudo-titulo p.sub-titulo{
-    text-align: center;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    letter-spacing: 0.01em;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    padding-right: 0.2em;
-    padding-left: 0.2em;
-}
-.conteudo-titulo a p.titulo {
-    font-size: 5em;
-}
-.conteudo-titulo p.sub-titulo{
-    font-size: 1.5em;
-    padding-bottom: 2px;
-}
-
-.conteudo-box {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-
-    color: #fff;  
-    background: rgb(248, 248, 255, 0.8 );
-}
- .conteudo-box h3.informacoes-titulo, .conteudo-box p.informacoes-conteudo {
-    color: black;  
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    letter-spacing: 2px;
-}
-.conteudo-box h3.informacoes-titulo {
-    text-align: center; 
-    font-size: 3em;
-    margin-top: 2px;
-}
-.conteudo-box p.informacoes-conteudo {
-    text-align: justify;
-    font-size: 1em;
-    text-indent: 20px;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 10px;
-}
-.conteudo-box button {
-    margin: 0 auto;
-    margin-top: 0.1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* RELACIONADO ÀS IMAGENS DO 2 PARALLEX*/
-
-.img-bio {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.img-bio img:hover {
-    opacity: 0.7;
-}
-.conjunto-imagens-bio h3 {
-    padding: 1em;
-    font-size: 1.5em;
-}
-.conjunto-imagens-bio p {
-    margin-top: 1em;
-    font-size: 1em;
-    color: black;
-    text-align: center;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-}
-.conjunto-imagens-bio .img-bio img {
-    width: 18em;
-    height: 23em;
-    margin-right: 1em;
-    border-radius: 16px;
-    flex-shrink: 1;
-}
-.img-lateral {
-    margin-bottom: 2em;
-    margin-top: 2em;
-}
-.img-lateral:hover {
-    height: 24em;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-    transition: height 0.5s ;
-}
-#img-central {
-    width: 20em;
-    height: 27em;
-    border-radius: 10px;
-}
-
-.clear {
-    clear: both;
-}
-
-/* FEED*/
-.corpo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+/* FORMATAÇÕES DE ALGUMAS CONFIGURAÇÕES DO BOOTSTRAP */
+.navbar {
+    border-bottom: 1px solid #8B795E;
     background: white;
 }
-article {
-    width: 70%;
+.navbar a, a.text-info:focus, a.text-info:hover{
+    color: #8B795E!important;
 }
-
-article, aside {
-    padding: 24px;
-    color:black;
+/* TIRA O ALINHAMENTO DO GRID DO CONTAINER BOOTSTRAP*/
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0;
 }
-article a, article:visited {
-    color:black;
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+    color: rgba(0, 0, 0, 0.5);
 }
-article h3 {
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 0;
-    border-bottom: 3px solid #00688B;
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    color: rgba(0, 0, 0, 0.7);
 }
-section {
-    display: flex;
-    border: 1px solid #009ACD;
-    border-left: none;
-    margin-bottom: 20px;
-    border-radius: 16px;
-    position: relative;
+#box-apresetacao .container {
+   margin-top: 90px;
 }
-section:hover {
-    opacity: 0.9;
-    background-color: #e9e9e9;
-    cursor: pointer;
-}   
-section img {
-    width: 12em;
-    height: 10em;
-    border-radius: 16px 0 0 16px;
-}
-section h4 {
-    text-transform: uppercase;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.2em;
-    margin-top: 15px;
-    color: #00688B;
-}
-section p {
-    margin-top: 0.3em;
-    padding-right: 1.5em;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1em;
-    text-align: justify;
-}
-.escrito-por {
-    color: #009ACD;
-    padding-bottom: 1em;
-}
-.titulo-noticia {
-    display: block;
-    padding-left: 1.5em; 
-}
-#first-post {
-    width: 100%;
-    height: 30em;
-    background: url(../imgs/chuva.jpg) no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-    border: none;
-}
-#first-post-2 {
-    width: 100%;
-    height: 30em;
-    background: url(../imgs/montanha-verde.jpg) no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-    border: none;
-}
-#first-post .titulo-noticia, #first-post-2 .titulo-noticia  {
-    margin-top: 10em;
-    display: flex;
-    flex-direction: column;    
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 100%;
-    margin-right: 24px;
-}
-#first-post .titulo-noticia p, #first-post .titulo-noticia h4 {
-    color: white;
-    text-align: center;
-}
-#first-post-2 .titulo-noticia p, #first-post-2 .titulo-noticia h4 {
-    color: black;
-    text-align: center;
-}
-#first-post .titulo-noticia h4 {
-    font-size: 3em;
-    text-shadow: -3px 2px 0px black;
-}
-#first-post-2 .titulo-noticia h4 {
-    font-size: 3em;
-}
-#first-post .titulo-noticia p {
-    font-size: 1.2em;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    color: white;
-    text-shadow: -2px 2px 0px #009ACD;
-}
-#first-post-2 .titulo-noticia p {
-    font-size: 1.2em;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    color: white;
-}
-#numeracao-pagina {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-.btn-numeragem {
-    border-radius: 64px;
-    padding: 10px 15px;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-.no-use, .no-use:hover {
-    cursor: auto;
-}
-
-/* MENU LATERAL*/
-aside {
-    background-color: #f5f5f5;
-    width: 30%;
-    box-shadow: 0px 0px 7px black;
-}
-aside h3 {
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    font-size: 1.5em;
-    padding: 0.6em;
-    padding-bottom: 0;
-    text-align: left;
-    margin-bottom: 0;
-    border-bottom: 2px solid #00688B;
-}
-aside li {
-    display: block;
-    padding: 10px; 
-    border-bottom: 1px solid #009ACD;
-}
-aside a {
-    color: black;
-}
-aside li:hover {
-    background-color: #e9e9e9;
-    cursor: pointer;
-}
-aside input {
-    margin-top: 1em;
+#box-apresetacao .container .bg-titulo {
+    margin-top: 2em;
     margin-bottom: 2em;
+    background: #e0ddc6;
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid #009ACD;
-    padding: 0.2em;
+}
+#box-apresetacao .container .box-titulo p {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+
+    color: #7A7A7A;
+    font-family: 'Shanti', sans-serif;
+    font-size: 1.2em;
+}
+#box-apresetacao .container .box-titulo .box-redes-sociais {
+    margin-top: 40%;
+}
+#box-apresetacao .container .box-titulo .box-redes-sociais a {
+    text-decoration: none;
+    color: #CDB38B;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#box-apresetacao .container .box-titulo .box-redes-sociais a:hover {
+    color: #8B795E;
+}
+#box-apresetacao .container .box-titulo h1{
+    font-family: 'Spectral SC', serif;
+    font-size: 3em;
+}
+#box-apresetacao .container img {
+    width: 100%;
+    height: 100%;
+}
+.borda-titulo {
+    width:  30%;
+    height: 3px;
+    background: #CDB38B;
+    margin: 0 auto;
 }
 
-/* RODAPÉ*/
-footer {
-    padding: 20px;
-    text-align: center;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .navbar a, a.text-info, a.text-info{
+        font-size: 0.9em;
+    }
+    #box-apresetacao .container {
+        margin-top: 50px;
+    }
+    #box-apresetacao .container .box-titulo p {
+        font-size: 1em;
+    }
+    #box-apresetacao .container .box-titulo h1{
+        font-size: 2em;
+    }
+    #box-apresetacao .container .box-titulo .box-redes-sociais {
+        margin-top: 0;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #box-apresetacao .container {
+        margin-top: 50px;
+    }
+    #box-apresetacao .container .box-titulo p {
+        font-size: 1em;
+    }
+    #box-apresetacao .container .box-titulo h1{
+        font-size: 2em;
+    }
+    #box-apresetacao .container .box-titulo .box-redes-sociais {
+        margin-top: 0;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #box-apresetacao .container .box-titulo p {
+        font-size: 1em;
+    }
+    
+    #box-apresetacao .container .box-titulo h1{
+        font-size: 2em;
+    }
+    #box-apresetacao .container .box-titulo .box-redes-sociais {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+ }
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #box-apresetacao .container .box-titulo .box-redes-sociais {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
 }
 
-/*----------------------------------------------------------*/
-
-/* ADPTAÇÃO DA TELA */
-@media (min-width: 0px) {
-    body {
-        min-width: 700px;
-    }
-    .conteudo-titulo p.titulo {
-        font-size: 3em;
-    }
-    /* RESPONSIVIDADE DAS IMAGEM DO CABEÇALHO*/
-    .conjunto-imagens-bio .img-bio img {
-        width: 12em;
-        height: 18em;
-        margin-right: 1em;
-        border-radius: 16px;
-        flex-shrink: 1;
-    }
-    .img-lateral {
-        margin-bottom: 2em;
-        margin-top: 2em;
-    }
-    .img-lateral:hover {
-        height: 24em;
-        margin-bottom: 1.5em;
-        margin-top: 1.5em;
-        transition: height 0.5s ;
-    }
-    #img-central {
-        width: 14em;
-        height: 21em;
-        border-radius: 10px;
-    }
-
-    /* RESPONSIVIDADE DA SECTION*/
-    section {
-        height: 15em;
-    }
-    section img {
-        width: 16em;
-        height: 15em;
-    }
-    section h4 {
-        font-size: 0.8em;
-    }
-    section p {
-        font-size: 0.7em;
-    }
-
-    /* RESPONSIVIDADE DA ASIDE*/
-    aside h3 {
-        font-size: 1.3em;
-    }
-
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
 }
-

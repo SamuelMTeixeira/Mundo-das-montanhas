@@ -1,134 +1,105 @@
-<!DOCTYPE html>
-<html lang="pt-br"> 
+<!doctype html>
+<html lang="pt-br">
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <!-- Estilo customizado CSS-->
+        <link rel="stylesheet" href="css/style.css">
+
         <title>Mundo das Montanhas</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Site focado em exibir as belezas mineiras da região">
 
-        <!-- Estilos CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+        <!-- Ícone da página -->
+        <link rel="icon" href="imgs/icone.png"> 
 
-         <!-- Deixa algumas configurações css iguais em diversos navegadores-->
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        
+        <meta name="description" content="Focando sempre em exibir as belezas da região">
     </head>
     <body>
-        <header class="imagem-1">
-            <div class="conteudo-titulo">
-                <a href="index.html"><p class="titulo">Mundo das montanhas</p></a>
-                <p class="sub-titulo">Explorando as belezas da região</p>
-            </div>
-        </header>
-        <div class="conteudo">
-            <div class="conjunto-imagens-bio">
-                <h3>A grande biodiversidade regional</h3>
-                <div class="img-bio">
-                    <img class="img-lateral" src="imgs/passaro.JPG" alt="canário">
-                    <img id="img-central" src="imgs/arvore.JPG" alt="paraju">
-                    <img class="img-lateral" src="imgs/arara.JPG" alt="arara">
-                </div>
-                <p>Exibindo sempre as belezas naturais que residem em nossa região</p>
-            </div>
-        </div>
-
-        <div class="imagem-2">
-            <div class="conteudo-box">
-                <h3 class="informacoes-titulo">A paisagem mineira</h3> 
-                <p class="informacoes-conteudo">
-                    Ataléia é uma pequena cidade situada no nordeste de Minas Gerais,
-                    na divisa com o Espírito Santo. Protegida por altas montanhas, às margens do rio Norte, 
-                    Ataléia vai seguindo a História. Este espaço é dedicado àqueles que admiram esta terra simples,
-                    de raras paisagens e de povo hospitaleiro.</p>
-                    <a href="historia-da-cidade.html"><button>Leia mais sobre a história da cidade</button></a>
-            </div>
-        </div>
-        <main class="corpo">
-            <article>
-                <h3>Últimas postagens</h3> <br><br>
-    
-                <!-- Exibe as notícias mais recentes -->
-                <a href="chuva-dezembro.html">
-                    <section id="first-post">
-                        <div class="titulo-noticia">
-                            <h4>Chuvas do mês de Dezembro</h4>
-                            <p>Acompanhe a marcação pluviométrica de Ataléia neste mês de dezembro.<br>
-                                Clique no banner para visualizar...
-                            </p>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="montanha-verde.html">
-                    <section>
-                        <img src="imgs/montanha-verde.jpg" alt="Pluviomêtro">
-                        <div class="titulo-noticia">
-                            <h4>Acampamento na montanha verde</h4>
-                            <p class="escrito-por">Atualizado por Samuel em <time> 19/12/2021</time></p>
-                            <p>O blog Mundo das Montanhas participou de mais uma aventura na Pedra de Sr. Delson ou Montanha Verde. <span class="see-more">Clique para ver mais...</span></p>
-                            
-                        </div>
-                    </section>
-                </a>
-
-                <a href="orquideas.html">
-                    <section class="post">
-                        <img src="imgs/orquidea.JPG" alt="Pluviomêtro">
-                        <div class="titulo-noticia">
-                            <h4>As orquídeas ataleenses</h4>
-                            <p class="escrito-por">Atualizado por Samuel em <time> 19/12/2021</time></p>
-                            <p>Imagem da orquídea do tipo pseudolaelia encontrada na pedra do Poterrão nos arredores de Ataléia. <span class="see-more">Clique para ver mais...</span></p>
-                        </div>
-                    </section>
-                </a>
-                
-                <!-- Exibe a numeração das páginas-->
-                <div id="numeracao-pagina">
-                    <a href="#"><button class="btn-numeragem">1</button></a>
-
-                    <button class="no-use">Próximo</button>
-                </div>
-
-            </article>
-
-            <!-- Menu lateral-->
-            <aside>
-
-                <h3>Pesquise algum conteúdo</h3>
-                <input type="search" list="lista-conteudos">
-
-                <datalist id="lista-conteudos">
-                    <option value="Chuvas do mês de Dezembro"> </option>
-                    <option value="Visita à montanha verde"></option>
-                    <option value="As orquídeas ataleenses"></option>
-                </datalist>
-
-                <h3>Explore mais conteúdos</h3>
-                <ul>
-                    <li>
-                        <a href="sobre-montanhas.html">
-                            Montanhas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="sobre-natureza.html">
-                            Natureza
-                        </a>
-                    </li> 
-                    <li>
-                        <a href="indices.html">
-                            Índice pluviométrico
-                        </a>
-                    </li> 
-                </ul>
+        <!-- CABEÇALHO DA PG -->
+        <header>
+            <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+            <nav class="navbar navbar-expand-md fixed-top">
+                <div class="container">
+                   <a class="navbar-brand m-0" href="index.html"><img src="imgs/icone.png" width="40px"></a>
+                    <a class="navbar-brand text-info ml-0" href="index.html">Mundo das Montanhas</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+                        <i class="fas fa-bars"></i>
+                    </button>
         
-            </aside>
+                    <div class="collapse navbar-collapse" id="nav-target">
+                        <ul class="navbar-nav ml-auto"> 
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Quem somos?</a>
+                            </li>
+                        </ul>
+        
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Pesquise algo..." >
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success" type="button">Ir</button>
+                                </div>    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- CONTEÚDO -->
+        <main>
+            <!-- IMAGEM E TÍTULO DA PAGINA -->
+            <section id="box-apresetacao" class="d-flex">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-4 bg-titulo">
+                            <div class="box-titulo">
+                                <h1 class="text-center">Mundo das montanhas</h1>
+                                <div class="borda-titulo"></div>
+                                <p class="text-justify">
+                                    Este espaço é dedicado àqueles que admiram esta terra simples, 
+                                    de raras paisagens e de povo hospitaleiro.
+                                </p>
+                                <div class="box-redes-sociais d-flex justify-content-center flex-nowrap flex-row align-items-center">
+                                    <a href="https://www.facebook.com/renatoalves.teixeira">
+                                        <i class="fab fa-facebook-square fa-2x"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/renatoalves.teixeira/">
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/user/renalteix">
+                                        <i class="fab fa-youtube fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="imgs/montanhas-ataleia.jpg" alt="Montanhas em ataleia">
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            
         </main>
-        <hr>
-        <footer class="clear">
-            <p>Samuel Tec. 2021 - Trabalho de Web</p>
-            <p>Versão 1.3</p>
-        </footer>
-    </body>
 
+
+        <footer>
+
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 </html>
