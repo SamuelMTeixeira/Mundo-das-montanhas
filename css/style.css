@@ -367,3 +367,10 @@ time {
     object-position: -60px 0px;
     object-fit: cover;
 }
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .img-quem-somos {
+        object-position: -40px 0px;
+    }
+}
