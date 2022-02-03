@@ -1,7 +1,7 @@
 
 // ALTERA A VERSÃO DO SOFTWARE
 function setDefinirVersao() {
-    const nVersao = "Versão 2.1.0.0";
+    const nVersao = "Versão 2.1.1.0";
     document.getElementById("versao-software").textContent = nVersao;
 }
 
@@ -148,6 +148,9 @@ function setNewComentario() {
         txtReport.textContent = " Reportar";
         btnReport.appendChild(txtReport);
         comentarioBox.appendChild(btnReport);
+
+        document.getElementById("user-comentario").value = "";
+        document.getElementById("texto-comentario").value = "";
 
         numeroComentario++;
     }
