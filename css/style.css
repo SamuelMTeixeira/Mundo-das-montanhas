@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     background: whitesmoke;
 }
+
 /* FORMATAÇÕES DE ALGUMAS CONFIGURAÇÕES DO BOOTSTRAP */
 .navbar {
     border-bottom: 1px solid #8B795E;
@@ -303,6 +304,7 @@ aside .nav-item .nav-link:hover {
 
 footer {
     background: #CDB38B;
+    padding-bottom: 5px;
 }
 
 article p{
@@ -373,4 +375,128 @@ time {
     .img-quem-somos {
         object-position: -40px 0px;
     }
+}
+
+/* ESTILIZAÇÃO DOS COMENTARIOS */
+#area-comentarios textarea {
+    resize: none;
+}
+#all-comentarios {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.comentario {
+    padding-top: 15px;
+    border-top: 4px solid #E0DDC6;
+
+    margin-bottom: 10px;
+}
+.horario-comentario {
+    color: #a39d9d;
+
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.nome-comentario {
+    display: inline;
+    margin-right: 15px;
+
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.curtir-comentario{
+    color: #828282;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.curtir-comentario p, .reportar-comentario p {
+    display: inline;
+}
+.curtir-comentario:hover{
+    color: #009ACD;
+}
+.like {
+    color: #009ACD;
+    font-weight: 700;
+}
+
+.reportar-comentario {
+    color: #828282;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reportar-comentario:hover {
+    color: #EE6363;
+}
+
+.curtir-comentario:focus, .reportar-comentario:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* MODAL PARA REPORTS*/
+/*header, main, footer {
+    position: relative;
+    display: none;
+}*/
+.modal-report {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    display: none;
+}
+.modal-corpo {
+    background: white;
+    height: 300px;
+    width: 600px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.modal-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.modal-cabecalho h2 {
+    font-size: 25px;
+}
+.btn-close {
+    cursor: pointer;
+    color: #828282;
+    font-size: 25px;
+}
+.btn-close:hover{
+    color: black;
+}
+.modal-conteudo textarea {
+    border: 1px solid #ddd;
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    resize: none;
+}
+.modal-rodape {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+.modal-rodape button {
+    transition:  all 0.3s ease;
 }
